@@ -1,0 +1,92 @@
+.aboutContainer {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: 900px) {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .aboutImgContainer {
+        width: 100%;
+        margin: auto;
+        @media screen and (min-width: 900px) {
+            width: 70%;
+        }
+        img {
+            width: 100%;
+            aspect-ratio: 5/4;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    .aboutDataContainer {
+        width: 90%;
+        margin: 40px auto;
+        display: flex;
+        flex-direction: column;
+
+        @media screen and (min-width: 900px) {
+            width: 75%;
+            margin: auto;
+        }
+
+        div {
+            margin-bottom: 1.5rem;
+
+            h5,
+            h6 {
+                font-family: var(--font-base);
+                font-size: var(--fontsize-subtitle);
+                font-weight: 300;
+                margin: 0;
+                color: var(--darkgray-color);
+                @media screen and (min-width: 900px) {
+                    font-size: var(--fontsize-title);
+                }
+            }
+
+            div {
+                display: inline-flex;
+                border-top: 1px solid var(--gray-color);
+                flex-direction: column;
+                padding-top: 1rem;
+
+                p {
+                    display: flex;
+                    flex-direction: column;
+                    font-family: var(--font-secondary);
+                    font-weight: 300;
+                    margin: 0;
+                    color: var(--darkgray-color);
+                    line-height: 25px;
+                    font-size: 1.1rem;
+                    span {
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+
+        .matriculas {
+            h6 {
+                color: var(--darkgray-color);
+                font-family: var(--font-secondary);
+                font-weight: 600;
+                font-size: 1rem;
+                text-align: right;
+            }
+
+            div {
+                border: none;
+
+                p {
+                    display: block;
+                    text-align: right;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,112 @@
+.boxContainer {
+    box-shadow: 3px 3px 14px -7px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 3px 3px 14px -7px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 3px 14px -7px rgba(0, 0, 0, 0.75);
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.boxData {
+    border: 1px solid var(--gray-color);
+    border-top: none;
+    color: var(--darkgray-color);
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    .title {
+        font-family: var(--font-base);
+        font-size: 1rem;
+        margin: 0;
+        padding-top: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+
+        @media screen and (min-width: 900px) {
+            font-size: var(--fontsize-subtitle);
+
+        }
+    }
+
+    .location {
+        font-family: var(--font-secondary);
+        margin: 0;
+        display: flex;
+        align-items: center;
+        padding-top: 5px;
+        padding-bottom: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: .8rem;
+
+        @media screen and (min-width: 900px) {
+            font-size: unset;
+        }
+    }
+
+    .boxDataIcons {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 20px;
+
+        //min-height: 80px;
+        div {
+            display: flex;
+            align-items: center;
+            padding-top: 0px;
+            padding-left: 15px;
+            padding-right: 8px;
+            flex-wrap: wrap;
+
+            @media screen and (min-width: 900px) {
+                padding-top: 0px;
+            }
+
+            p {
+                font-family: var(--font-secondary);
+                font-weight: 300;
+                margin: 0;
+                font-size: .8rem;
+                padding-left: 5px;
+                margin: 5px auto;
+
+                @media screen and (min-width: 900px) {
+                    margin: 5px auto;
+                }
+            }
+        }
+    }
+
+    .separator {
+        width: 20px;
+        height: 1px;
+        margin-left: 15px;
+        background-color: var(--gray-color);
+    }
+
+    .value {
+        font-family: var(--font-number);
+        font-weight: 400;
+        font-size: 1rem;
+        background-color: var(--darkgray-color);
+        color: #fff;
+        display: inline-flex;
+        align-self: flex-end;
+        padding: 10px;
+        margin: 0;
+
+        @media screen and (min-width: 900px) {
+            font-size: var(--fontsize-subtitle);
+        }
+    }
+}
+
+.image {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-position: center;
+    object-fit: cover;
+
+    @media screen and (min-width: 900px) {}
+}

@@ -1,0 +1,34 @@
+.highlightedSection {
+
+    margin-top: 20px;
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 900px) {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+}
+
+.title {
+    font-family: var(--font-base);
+    font-size: var(--fontsize-subtitle);
+    text-align: center;
+    color: var(--darkgray-color);
+
+    @media screen and (min-width: 900px) {
+        font-size: var(--fontsize-title);
+    }
+}
+
+.highlightedContainer {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 350px));
+    justify-content: space-evenly;
+    row-gap: 40px;
+
+    @media screen and (min-width: 900px) {
+        width: 80%;
+    }
+}

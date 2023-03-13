@@ -1,0 +1,103 @@
+.search-container {
+    width: 100%;
+    display: grid;
+    grid-area: search;
+    margin: auto;
+    position: relative;
+
+    .search-input-container {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+
+        @media screen and (min-width:768px) {
+            padding: 20px;
+        }
+
+        input {
+            width: 100%;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 5px;
+            border-radius: 5px;
+            border: #adadad99 1px solid;
+            outline: none;
+            font-size: .8rem;
+
+            @media screen and (min-width:768px) {
+                font-size: 1.2rem;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 10px;
+            }
+
+        }
+
+        input::placeholder {
+            text-align: center;
+            font-size: 1rem;
+            font-family: "Work Sans", sans-serif;
+            font-weight: 400;
+        }
+    }
+
+
+
+    .search-option {
+        width: 100%;
+        position: absolute;
+        top: 101%;
+        background-color: #ffffff;
+        z-index: 999999;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        box-shadow: -1px 8px 15px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: -1px 8px 15px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: -1px 8px 15px 0px rgba(0, 0, 0, 0.75);
+
+        ul {
+            padding: 0;
+            list-style: none;
+
+            div {
+                text-decoration: none;
+
+                li {
+                    padding: 10px 10px 10px 10px;
+                    padding-bottom: 10px;
+                    font-size: 0.9rem;
+                    cursor: pointer;
+                    color: var(--darkgray-color);
+
+                    @media screen and (min-width:768px) {
+                        padding: 10px 20px 10px 20px;
+                    }
+
+                    p {
+                        margin: 0;
+                        text-align: left;
+                        font-family: var(--font-secondary);
+                        font-size: .7rem;
+                    }
+                }
+
+                li:hover {
+                    background-color: #f9f9f9;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:768px) {
+    .search-container {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .search-container {
+        width: 100%;
+    }
+}

@@ -1,0 +1,82 @@
+.appHeaderContainer {
+    width: 100%;
+    position: relative;
+    padding-top: 60px;
+    @media screen and (min-width:768px) {
+        height: 100vh;
+        padding-top: 0px;
+    }
+    .searcher{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: var(--darkgray-color);
+        width: 80%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        @media screen and (min-width:768px) {
+            width: 600px;
+        }
+        h3{
+            color: var(--white-color);
+            font-family: var(--font-base);
+            text-align: center;
+            font-size: var(--fontsize-subtitle);
+            margin: 0;
+            padding: 10px;
+            font-size: 1rem;
+            @media screen and (min-width:768px) {
+                font-size: 1.5rem;
+            }
+        }
+        div{
+            background-color: var(--white-color);
+            
+        }
+    }
+    
+    .appHeaderImageBig {
+        width: 100%;
+        height: 100%;
+        object-fit:cover;
+        object-position: center;
+        filter: brightness(.7);
+        @media screen and (min-width: 1024px) {
+            object-fit: cover;
+            object-position: top;
+            filter: unset;
+        }
+    }
+    .app__social-media-icons{
+        display: flex;
+        position: absolute;
+        bottom: 2rem;
+        align-items: center;
+        justify-content: center;
+        left: 50%;
+        transform: translateX(-50%);
+        backdrop-filter: blur(4px);
+        border-radius: 20px;
+        padding: 6px 5px;
+        background: #008e937e;
+        a{
+            padding: 0 10px;
+        }
+        @media screen and (min-width: 1024px){
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 50%;
+            right: 2rem;
+            bottom: unset;
+            left: unset;
+            transform: translateY(-50%);
+            backdrop-filter: unset;
+            background: unset ;
+            a{
+                padding: 10px 0;
+            }
+        }
+    }
+}

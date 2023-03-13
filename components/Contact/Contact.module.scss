@@ -1,0 +1,96 @@
+.aboutContainer {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width:480px) {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .aboutContactContainer {
+        width: 90%;
+        margin: auto;
+
+        @media screen and (min-width: 900px) {
+            width: 70%;
+        }
+
+        div {
+            margin-bottom: 1.5rem;
+
+            h6 {
+                font-family: var(--font-base);
+                font-size: var(--fontsize-subtitle);
+                font-weight: 300;
+                margin: 0;
+                color: var(--darkgray-color);
+                @media screen and (min-width: 900px) {
+                    font-size: var(--fontsize-title);
+                }
+            }
+
+            div {
+                display: inline-flex;
+                border-top: 1px solid var(--gray-color);
+                flex-direction: column;
+                padding-top: 1rem;
+
+
+                p {
+                    display: flex;
+                    align-items: center;
+                    font-family: var(--font-secondary);
+                    font-weight: 300;
+                    margin: 0;
+                    font-size: .9rem;
+                    color: var(--darkgray-color);
+
+                    @media screen and (min-width: 900px) {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .aboutMapContainer {
+        margin: auto;
+
+        @media screen and (min-width:480px) {
+            width: 75%;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: ce;
+            flex-direction: column;
+            position: relative;
+        }
+
+        h4 {
+            text-align: center;
+            background-color: #fff;
+            width: 100%;
+            position: absolute;
+            top: -100px;
+        }
+
+        .map {
+            border: 0;
+        }
+
+        fieldset {
+            color: var(--darkgray-color);
+
+            legend {
+                color: var(--darkgray-color);
+                font-size: var(--fontsize-subtitle);
+                font-family: var(--font-base);
+                text-align: center;
+                @media screen and (min-width: 900px) {
+                    font-size: var(--fontsize-title);
+                }
+            }
+        }
+    }
+}

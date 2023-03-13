@@ -1,0 +1,92 @@
+.formSection {
+    width: 85%;
+    margin: auto;
+
+    .title {
+        display: inline-flex;
+        font-family: var(--font-base);
+        font-size: var(--fontsize-subtitle);
+        color: var(--darkgray-color);
+        border-bottom: 1px solid var(--darkgray-color);
+        @media screen and (min-width: 900px) {
+            font-size: var(--fontsize-title);
+        }
+    }
+
+    form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .formRow {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+
+            @media screen and (min-width: 900px) {
+                display: grid;
+                grid-template-columns: 50% 50%;
+                gap: 2%;
+            }
+
+            label {
+                font-family: var(--font-secondary);
+                font-weight: 600;
+                color: var(--darkgray-color);
+                padding-bottom: 10px;
+
+                @media screen and (min-width: 900px) {
+                    padding-bottom: 0px;
+                }
+
+                input {
+                    width: 100%;
+                    border: none;
+                    background-color: #f1f1f1;
+                    height: 30px;
+                    padding: 15px;
+                    outline: none;
+                    border-radius: 5px;
+                    margin-top: 10px;
+                }
+            }
+        }
+
+        .formRowMessage {
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            margin-bottom: 20px;
+
+            label {
+                font-family: var(--font-secondary);
+                font-weight: 600;
+                color: var(--darkgray-color);
+
+            }
+
+            textarea {
+                width: 100%;
+                border: none;
+                background-color: #f1f1f1;
+                padding: 15px;
+                outline: none;
+                border-radius: 5px;
+                margin-top: 10px;
+                resize: none;
+            }
+        }
+
+        .submit {
+            background-color: var(--darkgray-color);
+            border: none;
+            color: #fff;
+            font-family: var(--font-secondary);
+            font-weight: 300;
+            font-size: 1.2rem;
+            padding: 10px 15px;
+            cursor: pointer;
+            align-self: flex-end;
+        }
+    }
+}

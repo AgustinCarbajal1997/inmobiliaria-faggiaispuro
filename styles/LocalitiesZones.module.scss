@@ -1,0 +1,87 @@
+.localityZonePage {
+
+    h1 {
+        font-family: var(--font-base);
+        font-size: 2.5rem;
+        font-weight: 600;
+        color: var(--darkgray-color);
+        text-align: center;
+    }
+
+    .localityZoneContainer {
+        width: 90%;
+        margin: auto;
+
+        form {
+            width: 100%;
+            display: flex;
+
+            .formRow {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 20px;
+                width: 100%;
+                margin: auto;
+
+                label {
+
+                    input {
+                        width: 96%;
+                        border: none;
+                        background-color: #f1f1f1;
+                        padding: 10px 15px;
+                        outline: none;
+                        border-radius: 5px;
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+
+            .submit {
+                background-color: var(--darkgray-color);
+                border: none;
+                color: #fff;
+                font-family: var(--font-secondary);
+                font-weight: 300;
+                font-size: 1.2rem;
+                padding: 10px 15px;
+                cursor: pointer;
+                align-self: flex-end;
+            }
+        }
+
+        .accordionContainer {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin-top: 40px;
+
+            .accordionZonesAdd {
+                padding: 20px 0;
+
+                input[type="text"] {
+                    width: 50%;
+                    border: none;
+                    background-color: #f1f1f1;
+                    padding: 10px 15px;
+                    outline: none;
+                    border-radius: 5px;
+                    font-size: 1rem;
+                }
+
+                input[type="submit"] {
+                    background-color: var(--darkgray-color);
+                    border: none;
+                    color: #fff;
+                    font-family: var(--font-secondary);
+                    font-weight: 300;
+                    font-size: 1rem;
+                    padding: 10px 15px;
+                    cursor: pointer;
+                    align-self: flex-end;
+                    margin-left: 15px;
+                }
+            }
+        }
+    }
+}

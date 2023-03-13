@@ -1,0 +1,106 @@
+.aboutServicesContainer {
+
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: 0 auto 40px auto;
+
+    @media screen and (min-width: 900px) {
+        padding-top: 40px;
+        width: 85%;
+    }
+
+    .aboutServicesTitleContainer {
+        width: 100%;
+
+        h5 {
+            font-family: var(--font-base);
+
+            color: var(--darkgray-color);
+            font-size: var(--fontsize-subtitle);
+            border-bottom: 1px solid var(--gray-color);
+            margin: 10px;
+            @media screen and (min-width: 900px) {
+                width: 50%;
+                margin: unset;
+                font-size: var(--fontsize-title);
+            }
+        }
+    }
+
+    .aboutServicesItemsContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        @media screen and (min-width: 900px) {
+            padding-top: 40px;
+            flex-direction: row;
+        }
+
+        img {
+            width: 150px;
+            height: 150px;
+
+            @media screen and (min-width: 900px) {
+                width: 250px;
+                height: 250px;
+            }
+        }
+
+        p {
+            width: 100%;
+            margin: 0 auto;
+            align-self: center;
+            
+            color: var(--darkgray-color);
+            font-family: var(--font-secondary);
+            font-size: 1rem;
+
+            @media screen and (min-width: 900px) {
+                padding-left: 2rem;
+                font-size: 1.3rem;
+            }
+        }
+
+        .highlightedText {
+            font-family: var(--font-secondary);
+            font-size: 1.3rem;
+            font-weight: 700;
+        }
+    }
+
+
+    .matriculas {
+        margin-top: 4rem;
+
+        .matriculasTitle {
+            color: var(--darkgray-color);
+            font-family: var(--font-secondary);
+            font-size: 1rem;
+            font-weight: 700;
+            text-align: right;
+            @media screen and (min-width: 900px) {
+                font-size: 1.3rem;
+            }
+        }
+
+        div {
+            border: none;
+
+            p {
+                display: block;
+                text-align: right;
+                color: var(--darkgray-color);
+                font-family: var(--font-secondary);
+                font-size: 1rem;
+                font-weight: 300;
+                line-height: 10px;
+                @media screen and (min-width: 900px) {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+}

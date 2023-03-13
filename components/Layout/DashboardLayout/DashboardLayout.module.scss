@@ -1,0 +1,53 @@
+.layoutContainer {
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 20% 80%;
+
+    .menuDashboard {
+        width: 100%;
+        height: 100%;
+        background-color: var(--darkgray-color);
+        display: flex;
+        flex-direction: column;
+
+        div {
+            position: sticky;
+            top: 0px;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+            ul {
+                width: 90%;
+                margin: auto;
+                list-style: none;
+                margin-top: 60px;
+                padding: 0;
+
+                li {
+                    padding: 15px 0px;
+                    padding-left: 15px;
+                    border-bottom: 1px solid var(--lightgray-color);
+
+                    p {
+                        color: var(--white-color);
+                        font-family: var(--font-secondary);
+                        font-size: 1.2rem;
+                        margin: 0;
+                        cursor: pointer;
+                    }
+
+                    a {
+                        color: var(--white-color);
+                        font-family: var(--font-secondary);
+                        font-size: 1.2rem;
+
+                    }
+                }
+            }
+        }
+    }
+}

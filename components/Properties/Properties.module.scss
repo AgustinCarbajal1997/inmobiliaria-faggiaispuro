@@ -1,0 +1,396 @@
+.propertiesSection {
+    min-height: 100vh;
+    padding-top: 80px;
+
+    @media screen and (min-width: 900px) {
+        padding-top: 150px;
+    }
+
+    .title {
+        font-family: var(--font-base);
+        font-size: 1rem;
+        text-align: center;
+        width: 80%;
+        margin: 20px auto;
+
+        @media screen and (min-width: 900px) {
+            font-size: var(--fontsize-title);
+            width: unset;
+        }
+    }
+
+    .typesContainer {
+        width: 95%;
+        margin: auto;
+
+        @media screen and (min-width: 900px) {
+            width: 70%;
+        }
+
+        .typesTitles {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 50% 50%;
+
+            h4 {
+                color: #fff;
+                font-family: var(--font-secondary);
+                font-size: 1rem;
+                font-weight: 300;
+                padding: 15px;
+                margin: 0;
+
+                @media screen and (min-width: 900px) {
+                    font-size: var(--fontsize-subtitle);
+                }
+            }
+        }
+
+        .typesIconsMobile {
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            width: 100%;
+            border-left: 1px solid var(--gray-color);
+            border-right: 1px solid var(--gray-color);
+
+            @media screen and (min-width: 900px) {
+                display: none;
+            }
+
+            div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                padding-top: 5px;
+                cursor: pointer;
+
+                @media screen and (min-width: 900px) {
+                    padding-top: 20px;
+                }
+
+                img {
+                    width: 30px;
+                    height: 30px;
+
+                    @media screen and (min-width: 900px) {
+                        width: 80px;
+                        height: 80px;
+                    }
+                }
+
+                p {
+                    margin: 0;
+                    margin-top: 5px;
+                    font-family: var(--font-secondary);
+                    font-weight: 300;
+                    font-size: .5rem;
+
+                    @media screen and (min-width: 900px) {
+                        font-size: unset;
+                    }
+                }
+            }
+        }
+
+        .typesIcons {
+            display: none;
+
+            @media screen and (min-width: 900px) {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                width: 100%;
+                border-left: 1px solid var(--gray-color);
+                border-right: 1px solid var(--gray-color);
+            }
+
+            div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                padding-top: 5px;
+                cursor: pointer;
+
+                @media screen and (min-width: 900px) {
+                    padding-top: 20px;
+                }
+
+                img {
+                    width: 30px;
+                    height: 30px;
+
+                    @media screen and (min-width: 900px) {
+                        width: 80px;
+                        height: 80px;
+                    }
+                }
+
+                p {
+                    margin: 0;
+                    margin-top: 5px;
+                    font-family: var(--font-secondary);
+                    font-weight: 300;
+                    font-size: .5rem;
+
+                    @media screen and (min-width: 900px) {
+                        font-size: unset;
+                    }
+                }
+            }
+        }
+    }
+
+    .buttonFilterContainer {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        cursor: pointer;
+
+        h3 {
+            color: var(--darkgray-color);
+            font-family: var(--font-secondary);
+            font-size: 1.4rem;
+        }
+    }
+
+
+    .generalFiltersContainer {
+        width: 95%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        padding-top: 1rem;
+
+        @media screen and (min-width: 900px) {
+            width: 70%;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            padding-top: 2rem;
+            display: grid;
+            grid-template-columns: 48% 48%;
+            gap: 4%;
+        }
+
+        .generalFiltersLocation {
+            width: 100%;
+
+            div {
+                display: grid;
+                grid-template-columns: 30% 70%;
+                align-items: center;
+                align-content: center;
+
+                label {
+                    width: 100%;
+                    font-family: var(--font-secondary);
+                    font-weight: 600;
+                    color: var(--darkgray-color);
+                    display: flex;
+                    align-items: center;
+                    font-size: .7rem;
+
+                    @media screen and (min-width: 900px) {
+                        font-size: unset;
+                    }
+                }
+
+                select {
+                    width: 100%;
+                    border: none;
+                    background-color: #f1f1f1;
+                    outline: none;
+                    border-radius: 5px;
+                    margin-top: 10px;
+
+                    @media screen and (min-width: 900px) {
+                        height: 30px;
+                    }
+                }
+            }
+        }
+
+        .generalFiltersRooms {
+            width: 100%;
+
+            div {
+                display: grid;
+                grid-template-columns: 30% 70%;
+                align-items: center;
+                align-content: center;
+
+                label {
+                    width: 100%;
+                    font-family: var(--font-secondary);
+                    font-weight: 600;
+                    color: var(--darkgray-color);
+                    display: flex;
+                    align-items: center;
+                    font-size: .7rem;
+
+                    @media screen and (min-width: 900px) {
+                        font-size: unset;
+                    }
+                }
+
+                input {
+                    width: 100%;
+                    border: none;
+                    background-color: #f1f1f1;
+                    outline: none;
+                    border-radius: 5px;
+                    margin-top: 10px;
+
+                    @media screen and (min-width: 900px) {
+                        height: 30px;
+                    }
+                }
+            }
+        }
+    }
+
+    .filterSection {
+        display: flex;
+        width: 95%;
+        margin: auto;
+
+        @media screen and (min-width: 900px) {
+            width: 70%;
+        }
+
+        .filtersContainer {
+            width: 100%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            position: relative;
+
+            @media screen and (min-width: 900px) {
+                padding: 2rem;
+            }
+
+            .titleForm {
+                text-align: center;
+                color: var(--darkgray-color);
+                font-family: var(--font-secondary);
+            }
+
+
+
+            .filtersContainerDetailsChecks {
+                display: grid;
+                width: 100%;
+                grid-template-columns: 23% 23% 23% 23%;
+                align-items: center;
+                gap: 2%;
+
+                @media screen and (min-width: 900px) {
+                    gap: 25px;
+                    display: flex;
+                    gap: 10px;
+                    row-gap: 0px;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+
+                label {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 8px;
+                    font-family: var(--font-secondary);
+                    font-weight: 600;
+                    font-size: .5rem;
+
+                    @media screen and (min-width: 900px) {
+                        font-size: unset;
+                    }
+                }
+
+            }
+
+            .buttonsFilterContainer {
+                display: flex;
+                justify-content: flex-end;
+                gap: 15px;
+
+                input {
+                    background-color: var(--darkgray-color);
+                    border: none;
+                    color: var(--white-color);
+                    padding: 8px 15px;
+                    font-family: var(--font-secondary);
+                    font-size: 1rem;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .propertySection {
+        width: 100%;
+        padding: 0;
+
+        .highlightedContainer {
+            width: 95%;
+            margin: 0px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 500px));
+            //justify-content: center;
+            gap: 40px;
+            row-gap: 40px;
+        }
+
+        .notFound {
+            text-align: center;
+            margin: auto;
+            font-family: var(--font-base);
+            color: var(--darkgray-color);
+
+        }
+    }
+}
+
+
+.highlightedContainer {
+    width: 80%;
+    margin: 60px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 500px));
+    justify-content: center;
+    gap: 40px;
+    row-gap: 40px;
+}
+
+.buttonsFilterContainer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+
+    input {
+        background-color: var(--darkgray-color);
+        border: none;
+        color: var(--white-color);
+        padding: 8px 15px;
+        font-family: var(--font-secondary);
+        font-size: 1rem;
+        cursor: pointer;
+    }
+}
+
+
+.notFound {
+    text-align: center;
+    font-family: var(--font-base);
+    color: var(--darkgray-color);
+    font-size: 1rem;
+
+    @media screen and (min-width: 900px) {
+        font-size: 2rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+}

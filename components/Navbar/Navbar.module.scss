@@ -1,0 +1,195 @@
+.appNavbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+    background-color: var(--darkgray-color);
+}
+
+.scroll-navbar {
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+    transition: all .3s ease-in-out;
+    background: #008e937e;
+}
+
+.appNavbarLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+
+    a {
+        .imageLogo {
+            width: 200px;
+            height: 60px;
+
+            @media screen and (min-width: 900px) {
+                width: 350px;
+                height: 100px;
+            }
+        }
+
+    }
+}
+
+.socialMediaHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+
+    p {
+        display: flex;
+        align-items: center;
+        letter-spacing: 1px;
+        margin: 0 1rem;
+        font-family: var(--font-secondary);
+        font-size: .9rem;
+        font-weight: 300;
+    }
+
+    div {
+        margin: 0 1rem;
+    }
+
+    @media screen and (max-width: 900px) {
+        display: none;
+    }
+}
+
+.appNavbarLinks {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    list-style: none;
+    padding-left: 0;
+
+    div {
+        width: 1px;
+        height: 20px;
+        background-color: #fff;
+    }
+
+    .li {
+        padding: 0 1rem;
+        cursor: pointer;
+        flex-direction: column;
+        position: relative;
+
+
+        a {
+            color: var(--white-color);
+            text-decoration: none;
+            flex-direction: column;
+            font-family: var(--font-secondary);
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+            transition: all 0.3s ease-in-out;
+            font-size: .9rem;
+            font-weight: 300;
+        }
+
+        .dropdownContainer {
+            min-width: 200px;
+            position: absolute;
+            top: 100%;
+            border-top: 10px solid var(--darkgray-color);
+            left: 0;
+            z-index: 999999;
+
+            p {
+                text-align: center;
+                color: var(--darkgray-color);
+                font-family: var(--font-secondary);
+                background-color: var(--white-color);
+                margin: 0;
+                padding: 10px 0;
+                padding-left: -1rem;
+                transition: all 0.2s ease;
+            }
+
+            p:hover {
+                background-color: #f1f1f1;
+                font-weight: 700;
+            }
+
+        }
+    }
+
+    .app__li-nav::before {
+        content: "";
+        position: absolute;
+        background-color: var(--white-color);
+        width: 60%;
+        height: 3px;
+        transition: 0.5s ease-in;
+        left: 0;
+        bottom: -2px;
+        transform: translateX(-105%);
+    }
+
+    .app__li-nav:hover::before {
+        transform: translateX(0);
+    }
+
+    @media screen and (max-width: 900px) {
+        display: none;
+    }
+}
+
+.appNavbarHamburger {
+    position: relative;
+    z-index: 999999;
+    right: 1rem;
+
+    @media screen and (min-width: 900px) {
+        display: none;
+    }
+}
+
+.appNavbarMenu {
+    width: 60%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    transition: all .2s ease-in-out;
+    background-color: var(--darkgray-color);
+
+    ul {
+        text-decoration: none;
+        list-style: none;
+        padding-left: 30px;
+
+        li {
+            margin-bottom: 20px;
+
+            a {
+                text-decoration: none;
+                text-transform: uppercase;
+                font-family: var(--font-secondary);
+                color: var(--white-color);
+                font-size: 1rem;
+            }
+        }
+    }
+
+
+    @media screen and (min-width: 900px) {
+        display: none;
+    }
+
+
+
+}
